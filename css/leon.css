@@ -1,0 +1,555 @@
+﻿
+/*to create an event loge you must select your sourse 
+    
+    
+
+ then you  write an Entry using 
+
+
+*/
+/*start  globle rules */
+:root{
+
+    --PrimaryColor:rgb(13, 18, 98);
+    --SeconderyColor:lightblue;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans",sans-serif;
+}
+/*End globle rules */
+
+@media(min-width:780px) {
+
+    .cantaner {
+        width: 600px;
+    }
+}
+
+
+@media(min-width:980px) {
+
+    .cantaner {
+        width: 900px;
+    }
+}
+
+
+@media(min-width=1200px) {
+
+    .cantaner {
+        width: 1000px;
+    }
+}
+
+
+@media(min-width=1400px) {
+
+    .cantaner {
+        width: 1300px;
+    }
+}
+
+.header .logo {
+    width: 50px;
+    height: min-content;
+}
+/*create the header*/
+.header {
+    padding: 20px;
+    height:fit-content;
+}
+.header .cantaner {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        background-color: transparent;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height:50px;
+
+    }
+.header .links{
+
+    position:relative;
+    width:50px;
+
+}
+    .header .cantaner .links .Icon {
+        width: 25px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        background-color: transparent;
+        position: relative;
+        left: 80px;
+        top: 5px;
+        z-index:2;
+    }
+    .header .cantaner .links .Icon span{
+
+
+        background-color:black;
+        width:100%;
+        height:4px;
+        margin-bottom:5px;
+
+    }
+
+   .header .cantaner .links .Icon span:nth-child(2) {
+            width: 60%;
+            transition:0.3s;
+        }
+    .header .cantaner .links .Icon:hover span:nth-child(2) {
+        width: 100%;
+        
+    }
+    .header .cantaner .links ul {
+        display: none;
+        flex-flow: column;
+        list-style: none;
+        background-color: lightgray;
+        width: fit-content;
+        position: relative;
+        top: 8px;
+        padding: 0px;
+        left: 33px;
+        top: 1px;
+        transition: 0.01s;
+    }
+    .header .cantaner .links:hover ul {
+        display: flex;
+    }
+* {
+
+ 
+}
+.header .cantaner .links ul  li a{
+        display: block;
+        background-color: transparent;
+        text-decoration:none;
+        text-align:left;
+        padding-bottom:2px;
+        border-bottom:1px solid black;
+        transition:0.3s;
+        
+    }
+.header .cantaner .links::after {
+    content: "";
+    border: 15px solid;
+    border-color: transparent transparent lightgray transparent;
+    position: relative;
+    top: -131px;
+    left: 80px;
+}
+.header .cantaner .links ul  li a:hover{
+    padding-left:25px;
+}
+.header .cantaner .links {
+    margin-right: 67px;
+}
+.logo {
+    margin-left: 6px;
+}
+/*colse the header*/
+
+
+/*start landing*/
+    .landing{
+    }
+        .landing .IntroText {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../images/landing.jpg);
+            background-size: cover;
+            height: calc(100vh - 70px);
+            flex-wrap: wrap;
+            z-index: 10;
+        }
+        .landing .IntroText h1{
+
+            margin-bottom:0px;
+            font-weight:bold;
+            font-size:50px;
+
+        }
+        .landing .IntroText  p{
+            display:block;
+            color:white;
+           text-align:center;
+           line-height:20px;
+           width:270px;
+
+
+        }
+
+/*end landing*/
+
+
+
+/*start featers*/
+
+
+.featers  {
+  
+    padding: 22px;
+}
+
+    .featers .container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300PX,1fr));
+        grid-gap:20px;
+    }
+
+    .featers .container .feat {
+
+        background-color:aqua;
+        display:flex;
+        flex-flow:column;
+        justify-content:center;
+        align-items:center;
+    }
+        .featers .container .feat i{
+
+            
+            font-size:22px;
+            font-weight:800;
+            
+
+
+        }
+        .featers .container .feat h3 {
+            padding: 10px 0px;
+            margin: 0px;
+        }
+        .featers .container .feat p {
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            margin-bottom: 13px;
+
+        }
+.servises .container .spacal-header {
+    display: flex;
+   flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+  
+}
+
+.servises .container .spacal-header p
+{
+
+    margin-top:-33px;
+
+
+
+}
+
+
+
+.servises .container .spacal-header h2
+{
+
+
+    font-size:100px;
+    font-weight:800;
+    margin:0px;
+    color:rgb(101, 88, 106, 0.20)
+
+
+}
+
+
+@media (max-width:780px) {
+
+    .servises .container .spacal-header h2 {
+        font-size: 60px;
+    }
+
+    .servises .container .spacal-header p {
+        margin-top: -25px;
+    }
+}
+
+/*end featers*/
+
+/*start servises*/
+
+.servies-container .col .sev {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: start;
+    background-color: aqua;
+    padding-left: 12px;
+    margin: 15px;
+}
+.servies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin: 20px;
+}
+
+.servies-container .col{
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    align-items:center;
+    text-align:left;
+    position:relative;
+    flex-wrap:wrap;
+    background-color:white;
+   
+}
+    .servies-container .col i {
+        margin: 10px;
+        font-size: 24px;
+        position: relative;
+        left: -5px;
+        top: 10px;
+    }
+
+    .servies-container .col h3 {
+        margin: 0;
+    }
+.Square {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    z-index: 3;
+    position: relative;
+    top: -119px;
+    left: -12px;
+}
+
+.rectangle {
+    width: 76px;
+    height: 245px;
+    background-color: rebeccapurple;
+    position: relative;
+    top: 104px;
+    left: 82px;
+}
+
+
+
+
+@media(max-width:700px) {
+
+
+            .servies-container {
+
+
+        /*       grid-template-columns: repeat(1,minmax(300px,1fr));
+*/
+
+    }
+
+            .servies-container .col .sev i {
+               
+            }
+
+            .servies-container .col .sev p {
+                text-align: center;
+                flex: 1;
+            }
+    
+}
+            
+
+
+
+@media(max-width:956.33px) {
+
+
+    #Shap1 {
+        display: none;
+    }
+
+
+
+}
+
+    /*end servises*/
+
+
+    /*start prtoflio*/
+
+
+/*start prtoflio  header*/
+
+
+.container .Protofolio .spacal-header h2  {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 0px;
+    color: rgb(101, 88, 106, 0.20);
+}
+.container .Protofolio .spacal-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+   
+    .container .Protofolio .spacal-header p {
+        margin: -22px;
+        z-index: 1;
+text-align:center;
+    }
+
+
+
+/*end prtoflio header*/
+
+
+
+/*start prtoflio items*/
+
+
+
+.container .Protofolio-content .prtoflio img {
+    width: 150px;
+    height: 100px;
+    margin:10px;
+
+}
+.container .Protofolio-content .prtoflio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    background-color:aqua;
+
+}
+.container .Protofolio-content .prtoflio p {
+
+    text-align:center;
+
+}
+
+.container .Protofolio-content{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1Fr));
+    grid-gap:10px;
+    background-color:white;
+    position:relative;
+
+}
+.container{
+    background-color:white;
+    z-index:-2;
+
+}
+
+@media(max-width:700px){
+    .container .Protofolio .spacal-header h2{
+
+
+        font-size:60px;
+
+    }
+
+}
+
+.container .Protofolio-content .prtoflio img::after {
+    content: "";
+    border-left: 30px solid blue;
+    border-bottom: 30px solid blue;
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top: -44px;
+    right: 0px;
+}
+
+/*end prtoflio items*/
+
+
+
+
+
+
+
+
+/*end prtoflio*/
+
+
+/*start about Us section*/
+
+
+.images-texts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(318px, 1Fr));
+ 
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.image{
+
+    display:flex;
+    justify-content:center;
+  height:auto;
+  width:auto;
+
+
+}
+.image img {
+
+    align-self:center;
+    width:auto;
+    height:200px;
+}
+
+.text{
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow:column;
+
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0px;
+    width: 403px;
+    overflow: visible;
+    z-index: 1;
+    border: 1px solid black;
+}
+
+
+.images-texts .text p:first-of-type{
+
+    font-weight:700;
+}
+
+
+
+/*end about Us section*/
+
+
